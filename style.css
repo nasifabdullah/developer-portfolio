@@ -201,3 +201,71 @@ hr{
     text-decoration: none;
     margin-right: 20px;
 }
+
+
+/* Responsive Style Section */
+
+@media screen and (max-width: 576px) {
+    nav,
+    nav > ul, 
+    .skills-container, 
+    .resume-content, 
+    .about-info-container, 
+    .contact{
+        flex-direction: column;
+        gap: 20px;
+        padding:10px 30px ;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .header{
+        background-image: none;
+    }
+    nav{
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    nav li{
+        margin: 0 auto;
+    }
+    .nav-title{
+        text-align: center;
+    }
+    .banner{
+        margin: 0 auto;
+    }
+    .banner-sub-title, .banner-title, .banner-description{
+        text-align: center;
+    }
+    .banner button{
+        display: block;
+        margin: 0 auto;
+    }
+   .banner img{
+    width: 100%;
+   }
+   hr{
+    width: 100%;
+   }
+    .what-ido, .about, .contact{
+        padding: 20px;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 20px 0;
+    }
+    .contact .btn-primary{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .contact{
+        padding: 20px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+}
